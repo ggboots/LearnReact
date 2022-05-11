@@ -10,14 +10,14 @@ const config = {
         path: path.resolve(__dirname, "dist"),
         filename: "bundle.js"
     },
-    devtool: "hidden-source-maps",
+    devtool: "inline-source-map",
     devServer: {
         static: {
             directory: path.join(__dirname, "dist")
         },
         hot:true,
         compress:true,
-        port: 3000
+        port: 9000
     },
     plugins: [
         new HtmlWebpackPlugin({
